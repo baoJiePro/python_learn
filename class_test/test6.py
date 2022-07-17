@@ -74,3 +74,17 @@ print(res)
 
 list_var = [1, 2, 3, 4, 5]
 print(len(list_var))
+
+
+class MyClass:
+    def fun(self):
+        pass
+
+    def __len__(self):
+        res_data = MyClass.__dict__
+        lst = [i for i in res_data if not (i.startswith("__") and i.endswith("__"))]
+        return len(lst)
+
+
+obj = MyClass()
+print(len(obj))
