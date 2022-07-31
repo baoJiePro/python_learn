@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css练习</title>
+    <style>
+        /*#java{*/
+        /*    color: green;*/
+        /*}*/
+        /*#go{*/
+        /*    color: aqua;*/
+        /*}*/
+        .c1 p{
+            background-color: aqua;
+        }
+        .c2 p{
+            background-color: green;
+        }
+        /**{*/
+        /*    color: red;*/
+        /*    background-color: green;*/
+        /*}*/
+        [alex='xxx']{
+            color: red;
+        }
+        span[alex='xxx']{
+            color: aqua;
+        }
+        [type='text']{
+            border: 1px solid red;
+        }
+    </style>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+<!--嵌入式-->
+<p id="java">Hello JAVA!</p>
+<p id="go">Hello Go!</p>
+
+<p>Hello Linux!</p>
+
+<div id="i1">alex</div>
+<div class="c1">egon</div>
+<div class="c1">alvin</div>
+<p class="c1">张三</p>
+<p class="c1">李四</p>
+
+<div class="c1">
+    <p>alex</p>
+    <div class="c2">
+        <p>alvin</p>
+    </div>
+</div>
+<p>Egon</p>
+
+<div alex="xxx">123</div>
+<div alex="yyy">234</div>
+<span alex="xxx">345</span>
+<span>456</span>
+<input type="text">
+<input type="checkbox">
+
+</body>
+</html>

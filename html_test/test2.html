@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+    <link rel="icon" href="https://www.jd.com/favicon.ico">
+    <style>
+      #xxx{
+        font-weight: 900;
+        font-style: italic;
+        color: red;
+        background-color: aquamarine;
+      }
+      #dog{
+        color: green;
+        background-color: red;
+      }
+    </style>
+</head>
+<body>
+alex
+<div id="xxx">alex</div>
+<div>yuan</div>
+<span>egon</span>
+<span id="dog">little dog</span>
+<br>
+<!--<img src="timg.jpg" alt="aa" title="bb" width="500" height="680">-->
+<h4>列表标签</h4>
+<ul>
+    <li>123</li>
+    <li>234</li>
+    <li>345</li>
+</ul>
+<ol>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+</ol>
+<dl>
+    <dt>河北省</dt>
+    <dd>保定市</dd>
+    <dd>石家庄市</dd>
+    <dd>廊坊市</dd>
+</dl>
+<h4>表格标签</h4>
+<table border="1" cellpadding="20" cellspacing="5">
+     <thead>
+           <tr>
+               <th>姓名</th>
+               <th>年龄</th>
+               <th>薪水</th>
+               <th>部门</th>
+           </tr>
+     </thead>
+     <tbody>
+           <tr>
+               <td colspan="2">123</td>
+
+               <td>2000</td>
+               <td rowspan="3">销售</td>
+           </tr>
+           <tr>
+               <td>张三</td>
+               <td>23</td>
+               <td>2000</td>
+
+           </tr>
+           <tr>
+               <td>张三</td>
+               <td>23</td>
+               <td>2000</td>
+
+           </tr>
+     </tbody>
+</table>
+
+<h4>注册页面</h4>
+<form action="http://127.0.0.1:8800" method="post">
+    <p><label for="user">姓名</label> <input id="user" type="text" name="user" placeholder="用户名"></p>
+    <p>密码 <input type="password" name="pwd" ></p>
+    <p>爱好 <input type="checkbox" name="hobby" value="lanqiu" checked> 篮球  <input type="checkbox"  name="hobby" value="zuqiu">足球  <input type="checkbox"  name="hobby" value="shuangseqiu">双色球   </p>
+    <p>性别 <input type="radio" name="gender" value="1" checked>男  <input type="radio" name="gender" value="2"> 女  <input type="radio" name="gender">其他
+
+    <p><input type="hidden" name="token" value="12312sad221312sa"></p>
+    <p><input type="reset"></p>
+    <p><input type="file"></p>
+      <p>
+            籍贯
+        <select name="pro" id="" size="3" multiple>
+            <option value="hebei">河北省</option>
+            <option value="henan" selected>河南省</option>
+            <option value="hsandong">山东省</option>
+        </select>
+      </p>
+
+    <p>
+        <textarea name="jianjie"  cols="30" rows="10" placeholder="个人简介"></textarea>
+    </p>
+
+
+
+    <input type="submit">
+</form>
+
+</body>
+</html>
