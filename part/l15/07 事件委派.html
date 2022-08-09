@@ -12,6 +12,11 @@
     <li>222</li>
     <li>333</li>
 </ul>
+
+<div class="c2">
+    <div>aa</div>
+    <p>bb</p>
+</div>
 <hr>
 <button class="add">ADD</button>
 
@@ -29,6 +34,9 @@
     // $(".add").on("click",function () {
     //
     // });
+    $(".c2").on("click","p",function (){
+        console.log($(this).html())
+    })
 
     // 事件委派
     $(".c1").on("click","li",function () {
